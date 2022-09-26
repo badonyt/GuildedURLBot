@@ -9,7 +9,7 @@ import random
 import time
 import json
 # Imports class colors
-from Colors import *
+from ColorsJsonstuff import *
 
 
 # Opens json file
@@ -33,7 +33,10 @@ driver.get('https:/guilded.gg')
 username_CONST = data["Email"]
 password_CONST = data["Password"]
 # gets words that user wannts
-url_const = ["bad", "nice", "cool","skeppy","andrewtate", "kkkkklllaosda"]
+url_const = []
+
+nice(url_const, 'URLS.json')
+
 # Final button xpath
 buttonfinal = "/html/body/div[2]/div/div[1]/div[1]/div[2]/div[2]/span/div[1]/div/div[1]/div/div/div/div[1]/div[2]/div[1]/button"
 # Click Login Button
